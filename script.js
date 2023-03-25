@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
   //card options
   const cardArray = [
@@ -78,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement("img");
-      card.setAttribute("src", "gris.png");
+      card.setAttribute("src", "images/gris.png");
       card.setAttribute("data-id", i);
       card.addEventListener("click", flipCard);
       grid.appendChild(card);
@@ -92,19 +94,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const optionTwoId = cardsChosenId[1];
 
     if (optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute("src", "gris.png");
-      cards[optionTwoId].setAttribute("src", "gris.png");
+      cards[optionOneId].setAttribute("src", "images/gris.png");
+      cards[optionTwoId].setAttribute("src", "images/gris.png");
       alert("You have clicked the same image!");
     } else if (cardsChosen[0] === cardsChosen[1]) {
       alert("You found a match");
-      cards[optionOneId].setAttribute("src", "white.png");
-      cards[optionTwoId].setAttribute("src", "white.png");
+      cards[optionOneId].setAttribute("src", "images/white.png");
+      cards[optionTwoId].setAttribute("src", "images/white.png");
       cards[optionOneId].removeEventListener("click", flipCard);
       cards[optionTwoId].removeEventListener("click", flipCard);
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute("src", "gris.png");
-      cards[optionTwoId].setAttribute("src", "gris.png");
+      cards[optionOneId].setAttribute("src", "images/gris.png");
+      cards[optionTwoId].setAttribute("src", "images/gris.png");
       alert("Sorry, try again");
     }
     cardsChosen = [];
@@ -128,3 +130,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createBoard();
 });
+
+////////////////////////////codigo flip cartas
+const cards = document.querySelectorAll(".card");
+
+const reveal = (e) => {
+  const currentCard = e.currentTarget;
+  currentCard.classList.add("flipped");
+
+  setTimeout(() => {
+    currentCard.classList.remove("flipped");
+  }, 1000);
+};
+
+for (const card of cards) {
+  card.addEventListener("click", reveal);
+}
