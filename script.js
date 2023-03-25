@@ -2,52 +2,67 @@ document.addEventListener("DOMContentLoaded", () => {
   //card options
   const cardArray = [
     {
-      name: "fries",
-      img: "fries.png",
+      name: "EMO1",
+      img: "EMO1.png",
     },
     {
-      name: "cheeseburger",
-      img: "cheeseburger.png",
+      name: "EMO2",
+      img: "EMO2.png",
     },
     {
-      name: "ice-cream",
-      img: "ice-cream.png",
+      name: "EMO3",
+      img: "EMO3.png",
     },
     {
-      name: "pizza",
-      img: "pizza.png",
+      name: "EMO4",
+      img: "EMO4.png",
     },
     {
-      name: "milkshake",
-      img: "milkshake.png",
+      name: "EMO5",
+      img: "EMO5.png",
     },
     {
-      name: "hotdog",
-      img: "hotdog.png",
+      name: "EMO6",
+      img: "EMO6.png",
+    },
+    {  name: "EMO7",
+      img: "EMO07",
     },
     {
-      name: "fries",
-      img: "fries.png",
+      name: "EMO8",
+      img: "EMO8.png",
     },
     {
-      name: "cheeseburger",
-      img: "cheeseburger.png",
+      name: "EMO1",
+      img: "EMO1.png",
     },
     {
-      name: "ice-cream",
-      img: "ice-cream.png",
+      name: "EMO2",
+      img: "EMO2.png",
     },
     {
-      name: "pizza",
-      img: "pizza.png",
+      name: "EMO3",
+      img: "EMO3.png",
     },
     {
-      name: "milkshake",
-      img: "milkshake.png",
+      name: "EMO4",
+      img: "EMO4.png",
     },
     {
-      name: "hotdog",
-      img: "hotdog.png",
+      name: "EMO5",
+      img: "EMO5.png",
+    },
+    {
+      name: "EMO6",
+      img: "EMO6.png",
+    },
+    {
+      name: "EMO7",
+      img: "EMO7.png",
+    },
+    {
+      name: "EMO8",
+      img: "EMO8.png",
     },
   ];
 
