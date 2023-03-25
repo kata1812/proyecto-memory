@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cardsChosen = [];
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
-    if (cardsWon.length === cardArray.length / 2) {
+    if (cardsWon.length === cardArray.length) {
       resultDisplay.textContent = "Congratulations! You found them all!";
     }
   }
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 ////////////////////////////codigo flip cartas
-const cards = document.querySelectorAll(".card");
+/*const cards = document.querySelectorAll(".card");
 
 const reveal = (e) => {
   const currentCard = e.currentTarget;
@@ -146,4 +146,4 @@ const reveal = (e) => {
 
 for (const card of cards) {
   card.addEventListener("click", reveal);
-}
+}*/
