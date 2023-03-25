@@ -85,11 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  let trys = 0;
+
   //check for matches
   function checkForMatch() {
     const cards = document.querySelectorAll("img");
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
+
+    trys++;
 
     if (optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "gris.png");
@@ -109,6 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     cardsChosen = [];
     cardsChosenId = [];
+    document.querySelector("#trys").textContent = trys;
+
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) {
       resultDisplay.textContent = "Congratulations! You found them all!";
