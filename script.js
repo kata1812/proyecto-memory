@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "EMO6",
-      img: "EMO6.PNG",
+      img: "EMO6.png",
     },
     {
       name: "EMO7",
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "EMO6",
-      img: "EMO6.PNG",
+      img: "EMO6.png",
     },
     {
       name: "EMO7",
