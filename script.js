@@ -82,15 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //el bucle recorre el array de imágenes, y se crea una carta en cada iteración.
   //se añade evento click a cada carta y se llama a la función flipCard
   //se agrega la imagen como hijo de game
-  function createBoard() {
-    for (let i = 0; i < cardArray.length; i++) {
-      const card = document.createElement("img");
-      card.setAttribute("src", "images/gris.png");
-      card.setAttribute("data-id", i);
-      card.addEventListener("click", flipCard);
-      game.appendChild(card);
-    }
-  }
 
   let trys = 0;
 
